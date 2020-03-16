@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-12">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/N1C0/eclipse-workspace/challenge_mp/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/N1C0/eclipse-workspace/challenge_mp/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/N1C0/eclipse-workspace/challenge_mp/mysql-connector-java-5.1.32-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
