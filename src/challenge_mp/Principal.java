@@ -17,7 +17,7 @@ public class Principal {
 	
 
 	private Store store;
-	private String key = "Agua";
+	private String key = "DevOps";
 	private Operaciones op;
 	private Login login;
 	
@@ -65,7 +65,7 @@ public class Principal {
           
             login.setCursor(Cursor.getDefaultCursor().WAIT_CURSOR);
 
-            for (int i = mensajes.length-20; i < mensajes.length; i++)
+            for (int i = 0; i < mensajes.length; i++)
             {
             	subject = mensajes[i].getSubject();
             	System.out.println(subject);
