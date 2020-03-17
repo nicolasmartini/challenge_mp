@@ -43,7 +43,7 @@ public class Login extends JFrame {
 
 		context = this;
 
-		PanelImagen panel_login = new PanelImagen("./src/imagenes/fondo_login.jpg");
+		PanelImagen panel_login = new PanelImagen(this.getClass().getClassLoader().getResource("imagenes/fondo_login.jpg"));
 		getContentPane().add(panel_login, BorderLayout.CENTER);
 		panel_login.setLayout(new BorderLayout(0, 20));
 
@@ -65,7 +65,7 @@ public class Login extends JFrame {
 		panel.add(panel_1, BorderLayout.NORTH);
 
 		JLabel lblNewLabel_1 = new JLabel();
-		ImageIcon ima = new ImageIcon("./src/imagenes/user.png");
+		ImageIcon ima = new ImageIcon(this.getClass().getClassLoader().getResource("imagenes/user.png"));
 		Icon icon = new ImageIcon(ima.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING));
 		lblNewLabel_1.setIcon(icon);
 		panel_1.add(lblNewLabel_1);
@@ -90,7 +90,7 @@ public class Login extends JFrame {
 		panel.add(panel_2, BorderLayout.CENTER);
 
 		JLabel lblNewLabel_2 = new JLabel();
-		ImageIcon ima2 = new ImageIcon("./src/imagenes/lock.png");
+		ImageIcon ima2 = new ImageIcon(this.getClass().getClassLoader().getResource("imagenes/lock.png"));
 		Icon icon2 = new ImageIcon(ima2.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING));
 		lblNewLabel_2.setIcon(icon2);
 		panel_2.add(lblNewLabel_2);
@@ -119,7 +119,7 @@ public class Login extends JFrame {
 		btnNewButton = new JButton("");
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setBackground(Color.WHITE);
-		ImageIcon ima3 = new ImageIcon("./src/imagenes/aceptar.png");
+		ImageIcon ima3 = new ImageIcon(this.getClass().getClassLoader().getResource("imagenes/aceptar.png"));
 		Icon icon3 = new ImageIcon(ima3.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING));
 		btnNewButton.setIcon(icon3);
 		btnNewButton.setOpaque(false);
@@ -181,7 +181,7 @@ public class Login extends JFrame {
 		btnNewButton_1.setForeground(Color.WHITE);
 		btnNewButton_1.setBackground(Color.WHITE);
 		btnNewButton_1.setBorder(null);
-		ImageIcon ima4 = new ImageIcon("./src/imagenes/cancelar.png");
+		ImageIcon ima4 = new ImageIcon(this.getClass().getClassLoader().getResource("imagenes/cancelar.png"));
 		Icon icon4 = new ImageIcon(ima4.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING));
 		btnNewButton_1.setIcon(icon4);
 		btnNewButton_1.setOpaque(false);
@@ -191,6 +191,7 @@ public class Login extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				
 				context.dispose();
 
 			}

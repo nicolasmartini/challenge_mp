@@ -9,10 +9,10 @@ USE challenge;
 #Se crean las tablas
 
 create table correos(
-	fecha DATE NOT NULL,
-	id_correo INT UNSIGNED AUTO_INCREMENT NOT NULL ,	
-	from VARCHAR(40) NOT NULL,
-	subject VARCHAR(40) NOT NULL,	
+	id_correo INT UNSIGNED AUTO_INCREMENT NOT NULL ,
+	fecha DATE NOT NULL,		
+	from_ VARCHAR(120) NOT NULL,
+	subject VARCHAR(120) NOT NULL,	
 	PRIMARY KEY (id_correo)
 	
  ) ENGINE=InnoDB;
@@ -23,6 +23,6 @@ create table correos(
 
 #Administrador con todos los privelegios.
 DELIMITER ; 
-GRANT ALL PRIVILEGES ON Parquimetros.* TO admin@localhost 
+GRANT ALL PRIVILEGES ON challenge.* TO admin@localhost 
     IDENTIFIED BY 'admin' WITH GRANT OPTION;
 

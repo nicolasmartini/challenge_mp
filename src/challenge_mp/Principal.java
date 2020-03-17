@@ -60,6 +60,7 @@ public class Principal {
 	 * Se procesan todos los correos encontrados y si contiene la palabra clave se guardan en la bd
 	 */
 	private void procesar_correos() {
+		
 
 		int res = JOptionPane.showConfirmDialog(login, "Desea procesar los correos", "Confirmar",
 				JOptionPane.YES_NO_OPTION);
