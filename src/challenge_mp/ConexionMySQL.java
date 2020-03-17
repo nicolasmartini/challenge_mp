@@ -26,7 +26,7 @@ public class ConexionMySQL  {
 
        }catch(Exception ex){
     	   System.out.println(ex.getMessage());
-           JOptionPane.showMessageDialog(null, "El usuario o la contraseña es incorrecto","Error de ingreso",JOptionPane.ERROR_MESSAGE);
+           JOptionPane.showMessageDialog(null, "El usuario o la contraseña es incorrecto","Error de acceso a la base de datos",JOptionPane.ERROR_MESSAGE);
 
        }
 

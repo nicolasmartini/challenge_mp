@@ -61,15 +61,14 @@ public class Principal {
 	 */
 	private void procesar_correos() {
 		
+		String input = JOptionPane.showInputDialog("Ingrese palabra clave a buscar en los correos", "DevOps");
 
-		int res = JOptionPane.showConfirmDialog(login, "Desea procesar los correos", "Confirmar",
-				JOptionPane.YES_NO_OPTION);
-
-		if (res == JOptionPane.NO_OPTION) {
+		if (input == null || input.trim().equals("")) {
 
 			return;
-
 		}
+		
+		key = input;
 
 		login.setCursor(Cursor.getDefaultCursor().WAIT_CURSOR);
 
@@ -160,7 +159,7 @@ public class Principal {
 				}
 
 			}
-		} catch (MessagingException | IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
